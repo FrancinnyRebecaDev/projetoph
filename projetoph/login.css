@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  background: radial-gradient(circle at top, #202020 0%, #121212 40%, #070707 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #f5f5f5;
+}
+
+.login-container {
+  background: rgba(20, 20, 20, 0.9);
+  padding: 36px 28px;
+  border-radius: 18px;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.45);
+  max-width: 420px;
+  width: 100%;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.login-container h2 {
+  margin-bottom: 10px;
+  color: #f5f5f5;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.login-container p {
+  font-size: 14px;
+  color: #c7c7c7;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.input-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  font-size: 14px;
+  color: #e9e9e9;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 10px;
+  font-size: 16px;
+  background: #111111;
+  color: #f5f5f5;
+  transition: all 0.2s ease;
+}
+
+.input-group input::placeholder {
+  color: #8f8f8f;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: #d4af37;
+  box-shadow: 0 0 0 4px rgba(212, 175, 55, 0.15);
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, #d4af37 0%, #b58b1a 100%);
+  color: #111111;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 10px 20px rgba(212, 175, 55, 0.2);
+}
+
+button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 12px 24px rgba(212, 175, 55, 0.28);
+}
+
+.btn-voltar {
+  margin-top: 15px;
+  background: linear-gradient(135deg, #2b2b2b 0%, #141414 100%);
+  color: #f5f5f5;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.22);
+}
+
+.btn-voltar:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.28);
+}
+
+.sucesso {
+  text-align: center;
+  padding: 18px 10px;
+}
+
+.sucesso h3 {
+  color: #d4af37;
+  margin-bottom: 12px;
+  font-size: 26px;
+}
+
+.sucesso p {
+  color: #f0f0f0;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.lembrete {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #d1d1d1;
+}
