@@ -1,0 +1,816 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    color-scheme: dark;
+    --superficie: #191919;
+    --superficie-hover: #202020;
+    --texto: #f5f5f5;
+    --texto-suave: #bdbdbd;
+    --dourado: #d4af37;
+    --dourado-escuro: #b58b1a;
+    --borda: rgba(255, 255, 255, 0.1);
+}
+
+
+body {
+    min-height: 100vh;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: radial-gradient(ellipse at 50% 0%, #24221b 0%, #141414 38%, #090909 100%);
+    color: var(--texto);
+    line-height: 1.5;
+}
+
+
+/* =========================
+   CABEÇALHO
+========================= */
+
+.cabecalho {
+
+    width: 100%;
+
+    min-height: 95px;
+
+    padding: 0 5%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    background: rgba(14, 14, 14, 0.86);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+
+/* LOGO */
+
+.logo {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 5px;
+
+    font-size: 23px;
+
+    letter-spacing: 0;
+
+    color: #f5f5f5;
+}
+
+
+.logo-circulo {
+
+    width: 50px;
+
+    height: 50px;
+
+    border-radius: 50%;
+
+    background: #080808;
+
+    color: #f5f5f5;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 11px;
+
+    font-weight: bold;
+
+    margin-right: 8px;
+}
+
+
+.logo-preto {
+
+    font-weight: 400;
+}
+
+
+.logo-dourado {
+
+    color: #d4af37;
+
+    font-weight: 400;
+
+    margin-left: 4px;
+}
+
+
+/* BOTÃO MEUS AGENDAMENTOS */
+
+.botao-agendamentos {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #d4af37, #b58b1a);
+    color: #111111;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 800;
+    padding: 15px 22px;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 8px 18px rgba(212, 175, 55, 0.16);
+}
+
+
+.botao-agendamentos:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 10px 22px rgba(212, 175, 55, 0.25);
+}
+
+
+/* =========================
+   CONTEÚDO
+========================= */
+
+.conteudo {
+
+    width: 90%;
+
+    max-width: 1120px;
+
+    margin: 48px auto 70px;
+}
+
+
+/* =========================
+   PROFISSIONAL
+========================= */
+
+.profissional {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+
+    margin-bottom: 52px;
+    padding: 26px 30px;
+    background: linear-gradient(110deg, rgba(212, 175, 55, 0.1), rgba(25, 25, 25, 0.88) 55%);
+    border: 1px solid var(--borda);
+    border-left: 3px solid var(--dourado);
+    border-radius: 8px;
+}
+
+
+.foto-profissional {
+
+    width: 115px;
+
+    height: 115px;
+
+    border-radius: 50%;
+
+    background: linear-gradient(135deg, #29251a, #111111);
+    border: 2px solid var(--dourado);
+    box-shadow: 0 0 0 5px rgba(212, 175, 55, 0.08);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #d4af37;
+
+    font-size: 22px;
+
+    font-weight: bold;
+
+    flex-shrink: 0;
+
+    overflow: hidden;
+}
+
+
+.texto-profissional p {
+
+    font-size: 20px;
+
+    color: var(--texto-suave);
+
+    font-weight: 500;
+
+    margin-bottom: 5px;
+}
+
+
+.texto-profissional h1 {
+
+    font-size: 39px;
+
+    font-weight: 700;
+
+    letter-spacing: 0;
+    line-height: 1.15;
+}
+
+
+/* =========================
+   SERVIÇOS
+========================= */
+
+.cabecalho-servicos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 5px;
+}
+
+.cabecalho-servicos p {
+    color: var(--dourado);
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.cabecalho-servicos span {
+    color: var(--texto-suave);
+    font-size: 14px;
+}
+
+.servicos h2 {
+
+    font-size: 36px;
+
+    margin-bottom: 22px;
+
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+
+/* CADA SERVIÇO */
+
+.servico {
+    min-height: 166px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 26px 30px;
+    gap: 24px;
+    background: linear-gradient(115deg, rgba(28, 28, 28, 0.96), rgba(20, 20, 20, 0.96));
+    border: 1px solid var(--borda);
+    border-radius: 6px;
+    margin-bottom: 12px;
+    transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+
+}
+
+.servico:hover {
+    background: linear-gradient(115deg, #202020, #191919);
+    border-color: rgba(212, 175, 55, 0.32);
+}
+
+.servico:last-child {
+    margin-bottom: 0;
+}
+
+
+/* INFORMAÇÕES */
+
+.informacoes h3 {
+
+    font-size: 24px;
+
+    margin-bottom: 13px;
+
+    font-weight: 700;
+}
+
+
+.detalhe {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    font-size: 17px;
+
+    margin-top: 9px;
+
+    color: #c7c7c7;
+}
+
+
+/* RELÓGIO */
+
+.icone-relogio {
+
+    width: 36px;
+
+    height: 36px;
+
+    border: 2px solid #d4af37;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #d4af37;
+
+    font-size: 23px;
+
+    line-height: 1;
+}
+
+
+/* DINHEIRO */
+
+.icone-dinheiro {
+
+    width: 36px;
+
+    height: 32px;
+
+    border: 2px solid #d4af37;
+
+    border-radius: 5px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-weight: bold;
+
+    color: #d4af37;
+
+    font-size: 17px;
+}
+
+
+/* BOTÃO RESERVAR */
+
+.botao-reservar {
+
+    border: none;
+
+    background: linear-gradient(135deg, #d4af37, #b58b1a);
+
+    color: #111111;
+
+    padding: 14px 22px;
+
+    border-radius: 999px;
+
+    font-size: 17px;
+
+    font-weight: 800;
+
+    cursor: pointer;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    flex-shrink: 0;
+}
+
+
+.botao-reservar span {
+
+    font-size: 25px;
+}
+
+
+.botao-reservar:hover {
+
+    transform: translateY(-1px);
+    box-shadow: 0 8px 18px rgba(212, 175, 55, 0.2);
+    filter: brightness(1.06);
+}
+
+.botao-reservar:focus-visible,
+.botao-agendamentos:focus-visible,
+.fechar:focus-visible,
+.confirmar:focus-visible {
+    outline: 2px solid var(--texto);
+    outline-offset: 3px;
+}
+
+
+/* =========================
+   MODAL
+========================= */
+
+.modal {
+
+    position: fixed;
+
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.78);
+    backdrop-filter: blur(5px);
+
+    display: none;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 20px;
+
+    z-index: 100;
+}
+
+
+.modal.ativo {
+
+    display: flex;
+}
+
+
+.caixa-modal {
+
+    width: 100%;
+
+    max-width: 450px;
+
+    background: #191919;
+
+    border: 1px solid rgba(255, 255, 255, 0.1);
+
+    border-radius: 8px;
+
+    padding: 30px;
+
+    position: relative;
+
+    box-shadow: 0 18px 50px rgba(0, 0, 0, 0.55);
+    animation: modal-entrada 0.2s ease-out;
+}
+
+@keyframes modal-entrada {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.caixa-modal h2 {
+
+    font-size: 25px;
+
+    margin-bottom: 10px;
+}
+
+
+.caixa-modal p {
+
+    color: #c7c7c7;
+
+    margin-bottom: 25px;
+}
+
+
+.fechar {
+
+    position: absolute;
+
+    right: 14px;
+
+    top: 14px;
+
+    width: 40px;
+
+    height: 40px;
+
+    display: grid;
+
+    place-items: center;
+
+    border: none;
+
+    background: #242424;
+
+    border-radius: 50%;
+
+    font-size: 30px;
+
+    line-height: 1;
+
+    cursor: pointer;
+
+    color: #c7c7c7;
+
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.fechar:hover {
+    background: #333333;
+    color: #ffffff;
+}
+
+
+.caixa-modal label {
+
+    display: block;
+
+    margin-top: 15px;
+
+    margin-bottom: 7px;
+
+    font-weight: 600;
+}
+
+
+.caixa-modal input,
+.caixa-modal select {
+
+    width: 100%;
+
+    height: 48px;
+
+    border: 1px solid rgba(255, 255, 255, 0.12);
+
+    border-radius: 6px;
+
+    padding: 0 12px;
+
+    font-size: 15px;
+
+    background: #111111;
+    color: #f5f5f5;
+    outline: none;
+}
+
+.caixa-modal input:focus,
+.caixa-modal select:focus {
+    border-color: var(--dourado);
+    box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.15);
+}
+
+
+.confirmar {
+
+    width: 100%;
+
+    margin-top: 25px;
+
+    border: none;
+
+    background: linear-gradient(135deg, var(--dourado), var(--dourado-escuro));
+
+    padding: 15px;
+
+    border-radius: 999px;
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+    color: #111111;
+    transition: filter 0.2s ease, transform 0.2s ease;
+}
+
+.confirmar:hover {
+    filter: brightness(1.06);
+    transform: translateY(-1px);
+}
+
+
+/* =========================
+   CELULAR
+========================= */
+
+@media (max-width: 700px) {
+
+    .cabecalho {
+
+        height: auto;
+
+        min-height: 90px;
+
+        padding: 20px;
+
+        gap: 15px;
+
+    }
+
+
+    .logo {
+
+        font-size: 15px;
+
+    }
+
+
+    .logo-circulo {
+
+        width: 40px;
+
+        height: 40px;
+
+        font-size: 9px;
+
+    }
+
+
+    .botao-agendamentos {
+
+        padding: 15px;
+
+        font-size: 14px;
+
+    }
+
+
+    .conteudo {
+
+        width: 92%;
+
+        margin-top: 40px;
+
+    }
+
+
+    .profissional {
+
+        gap: 18px;
+
+        margin-bottom: 50px;
+        padding: 20px 18px;
+
+    }
+
+
+    .foto-profissional {
+
+        width: 80px;
+
+        height: 80px;
+
+        font-size: 17px;
+
+    }
+
+
+    .texto-profissional p {
+
+        font-size: 15px;
+
+    }
+
+
+    .texto-profissional h1 {
+
+        font-size: 25px;
+        overflow-wrap: anywhere;
+
+    }
+
+    .cabecalho-servicos {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 3px;
+    }
+
+
+    .servicos h2 {
+
+        font-size: 30px;
+
+        margin-bottom: 20px;
+
+    }
+
+
+    .servico {
+
+        min-height: 155px;
+
+        padding: 20px 16px;
+        gap: 14px;
+
+    }
+
+
+    .informacoes h3 {
+
+        font-size: 20px;
+
+    }
+
+
+    .detalhe {
+
+        font-size: 17px;
+
+    }
+
+
+    .icone-relogio {
+
+        width: 35px;
+
+        height: 35px;
+
+    }
+
+
+    .icone-dinheiro {
+
+        width: 35px;
+
+        height: 29px;
+
+    }
+
+
+    .botao-reservar {
+
+        padding: 12px 15px;
+
+        font-size: 15px;
+
+    }
+
+}
+
+@media (max-width: 520px) {
+    .servico {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .botao-reservar {
+        min-width: 140px;
+        justify-content: center;
+    }
+
+    .caixa-modal {
+        padding: 26px 22px;
+    }
+}
+
+@media (max-width: 390px) {
+    .cabecalho {
+        padding: 16px 4%;
+        gap: 8px;
+    }
+
+    .logo {
+        gap: 3px;
+        font-size: 12px;
+    }
+
+    .logo-circulo {
+        width: 34px;
+        height: 34px;
+        margin-right: 3px;
+    }
+
+    .botao-agendamentos {
+        padding: 10px;
+        font-size: 12px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
